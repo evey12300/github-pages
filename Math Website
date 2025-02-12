@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Mastery - Visual Math Learning</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0056b3;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #007bff;
+    }
+    .btn {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    /* Pricing Table */
+    .pricing-table {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .pricing-tier {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .pricing-tier h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .pricing-tier .price {
+      font-size: 30px;
+      color: #007bff;
+      margin: 10px 0;
+    }
+    .pricing-tier ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing-tier ul li {
+      margin: 10px 0;
+    }
+    @media (max-width: 768px) {
+      .pricing-tier {
+        width: 100%;
+      }
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Progress Tracker */
+    .progress-tracker {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .progress-bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress-bar div {
+      height: 20px;
+      background: #007bff;
+      width: 0;
+      transition: width 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Math Mastery</h1>
+    <p>Visual Math Learning for K-12 and Beyond</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Courses Section -->
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <p>Explore our interactive math courses designed for visual learners.</p>
+      <div>
+        <h3>K-12 Math</h3>
+        <ul>
+          <li>Algebra</li>
+          <li>Geometry</li>
+          <li>Pre-Calculus</li>
+        </ul>
+      </div>
+      <div>
+        <h3>College Math</h3>
+        <ul>
+          <li>Calculus</li>
+          <li>Linear Algebra</li>
+          <li>Complex Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-table">
+        <!-- Tier 1 -->
+        <div class="pricing-tier">
+          <h3>Tier 1</h3>
+          <div class="price">$20/month</div>
+          <ul>
+            <li>Access to pre-recorded lessons</li>
+            <li>Interactive tools</li>
+            <li>Quizzes & assignments</li>
+          </ul>
+          <button class="btn">Subscribe</button>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="pricing-tier">
+          <h3>Tier 2</h3>
+          <div class="price">$40/month</div>
+          <ul>
+            <li>Everything in Tier 1</li>
+            <li>Monthly group Zoom sessions</li>
+          </ul>
+          <button class="btn">Subscribe</button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-tier">
+          <h3>Tier 3</h3>
+          <div class="price">$80/month</div>
+          <ul>
+            <li>Everything in Tier 2</li>
+            <li>One-on-one Zoom tutoring</li>
+          </ul>
+          <button class="btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section>
+      <h2>Your Progress</h2>
+      <div class="progress-tracker">
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+        <button class="btn" onclick="updateProgress(10)">Complete a Lesson</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background: #007bff; color: white;">
+    <p>&copy; 2023 Math Mastery. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Progress Tracker Script
+    let progress = 0;
+    function updateProgress(value) {
+      progress += value;
+      if (progress > 100) progress = 100;
+      document.getElementById("progress").style.width = progress + "%";
+    }
+  </script>
+</body>
+</html>
